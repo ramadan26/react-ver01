@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import PropTypes from "prop-types";
+
 import { Header } from "./components/Header";
 import { Home } from "./components/Home";
 
@@ -18,7 +20,9 @@ class App extends Component {
         <Header />
 
         <div className="App">
-          <Home user={user} />
+          <Home name={"RAmadan"} age={27} user={user}>
+            <h3>This render it without props!</h3>
+          </Home>
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <p>
